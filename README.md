@@ -38,7 +38,6 @@ The Geospatial Analysis and Multimodal Interaction System for Environmental Moni
 - **Using QR Codes**: Scan QR codes through the app to access additional content and features.
 
 ## Screenshots
-*Replace the following URLs with the actual paths to your screenshot images.*
 - **Home Screen**:
   ![App Animation](https://github.com/Samsa8/CHATGS/assets/130377432/fcf5cba2-81a9-457c-9cda-11806e753857)
   ![Home Screen](https://github.com/Samsa8/CHATGS/assets/130377432/0ef90155-541b-405f-b4ec-0a58b6248f03)
