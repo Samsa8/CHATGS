@@ -44,7 +44,7 @@ The Geospatial Analysis and Multimodal Interaction System for Environmental Moni
   ![User Interface](https://github.com/Samsa8/CHATGS/assets/130377432/0c185752-2aae-4709-b2e8-6ddb4cb2d5ef)
 
 - **Chat with Maps**:
-  !([Chat with Maps](https://github.com/Samsa8/CHATGS/assets/130377432/f7edf58d-77a6-4dd9-819d-df2633f589cb)
+  ![Chat with Maps](https://github.com/Samsa8/CHATGS/assets/130377432/f7edf58d-77a6-4dd9-819d-df2633f589cb)
 - **Finding Locations**:
   ![Finding Location](https://github.com/Samsa8/CHATGS/assets/130377432/7ed8daf7-d0d6-4c4e-a616-8636ba9372d3)
 - **QR Code Scanner**:
