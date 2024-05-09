@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/white" /> <!-- Change the background color as needed -->
+
+    <!-- Define the corners with curved edges -->
+    <corners android:radius="25dp" />
+
+    <!-- Define colors for each corner -->
+    <gradient
+        android:angle="135"
+        android:startColor="@color/Blue2"
+        android:endColor="@color/Blue2"
+        android:type="linear" />
+</shape>

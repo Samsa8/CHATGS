@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- Internet permission -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/chat_gs"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/chat_gs_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Finalprojectisro"
+        tools:targetApi="31">
+        <activity
+            android:name=".FeedbackActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CoreFunctionalitiesActivity"
+            android:exported="false" />
+        <!-- Main Activity: Entry point of the app -->
+        <activity
+            android:name=".UserInputActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- Display Image Activity -->
+        <activity
+            android:name=".DisplayImageActivity"
+            android:exported="false" />
+        <!-- About Info Activity -->
+        <activity
+            android:name=".AboutinfoActivity"
+            android:exported="false" />
+        <!-- WebView Activity -->
+        <activity
+            android:name=".WebViewActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/Blue6"
+    android:layout_height="match_parent">
+
+    <!-- QR Code Text -->
+    <TextView
+        android:id="@+id/qr_code_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="16dp"
+        android:text="Information of Outreach &amp; Student Projects/Internship"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black" />
+
+    <!-- NRSC logo -->
+    <ImageView
+        android:id="@+id/nrsc_image_view"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/qr_code_text_view"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/final_qr_code" />
+
+    <!-- Scan Me text -->
+    <TextView
+        android:id="@+id/scan_me_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nrsc_image_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Scan Me"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <!-- Google logo (clickable) -->
+    <RelativeLayout
+        android:id="@+id/google_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scan_me_text_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ImageView
+            android:id="@+id/google_image_view"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/website_img"
+            android:contentDescription="TODO" />
+
+        <!-- Text below the website logo -->
+        <TextView
+            android:id="@+id/click_me_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/google_image_view"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="Click Me"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+</RelativeLayout>

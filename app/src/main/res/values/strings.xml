@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">CHAT-GS</string>
+    <string name="navigation_drawer_open">Open drawer</string>
+    <string name="navigation_drawer_close">Close drawer</string>
+    <string name="about">About</string>
+    <string name="qr_code">QR Code</string>
+    <string name="core_functionalities">Core Functionalities</string>
+    <string name="feedback">Feedback</string>
+    <string name="enter_location">Please enter a location name</string>
+    <string name="run_analysis">Run Analysis</string>
+    <string name="location_input_hint">Enter a location...</string>
+</resources>
+

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/Blue6"
+    android:padding="16dp"
+    tools:context=".CoreFunctionalitiesActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Core Funtionalities"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- TextView for Displaying Name -->
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="• Used Map Api."
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- TextView for Displaying Processor Information -->
+    <TextView
+        android:id="@+id/textViewProcessor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="• Fetch Location/place."
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- TextView for Displaying RAM Information -->
+    <TextView
+        android:id="@+id/textViewRAM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="• Use QR code for more."
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- TextView for Displaying Device ID -->
+    <TextView
+        android:id="@+id/textViewID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="• User Frendly UI"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="8dp"/>
+
+
+</LinearLayout>

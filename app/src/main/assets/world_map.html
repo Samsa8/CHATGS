@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>World Map</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <style>
+        body, html, #map { height: 100%; margin: 0; padding: 0; }
+    </style>
+</head>
+<body>
+<div id="map"></div>
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<script>
+    var map = L.map('map').fitWorld();
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 20,
+        attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
+
+    var waterLevels = {
+        "Musi River, Hyderabad": "10 feet",
+        "Hussain Sagar, Hyderabad": "15 feet",
+        "Durgam Cheruvu, Hyderabad": "8 feet"
+    };
+
+    function displayLocation(locationName) {
+        var level = waterLevels[locationName];
+
+        fetch('https://nominatim.openstreetmap.org/search?format=json&q=' + encodeURIComponent(locationName))
+            .then(function(response) { return response.json(); })
+            .then(function(json) {
+                if (json.length > 0) {
+                    var lat = parseFloat(json[0].lat);
+                    var lon = parseFloat(json[0].lon);
+                    var newLatLng = L.latLng(lat, lon);
+                    map.setView(newLatLng, 13);
+                    var popupContent = level ? locationName + ": Water Level is " + level : locationName + ": Water Level Data not available";
+                    L.marker(newLatLng).addTo(map).bindPopup(popupContent).openPopup();
+                } else {
+                    console.error('Location not found:', locationName);
+                    alert('Location not found: ' + locationName);  // Or handle this case as needed
+                }
+            })
+            .catch(function(error) {
+                console.error('Geocoding error:', error);
+                alert('Geocoding error: ' + error);  // Or handle this case as needed
+            });
+    }
+</script>
+</body>
+</html>

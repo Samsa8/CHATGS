@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Blue6">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:background="@color/Blue"
+        android:padding="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+    <ImageButton
+        android:id="@+id/buttonDrawerToggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/menu_burger"
+        android:contentDescription="Menu"
+        android:layout_alignParentStart="true"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/isro"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="ISRO Logo"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/full_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHAT-GS"
+        android:textSize="40dp"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-medium"
+        android:layout_centerInParent="true"
+        tools:ignore="HardcodedText,SpUsage" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/relativeLayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:padding="16dp"
+        tools:ignore="ExtraText">
+
+        <EditText
+            android:id="@+id/userTextInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your text"
+            android:background="@drawable/button_rounded"
+            android:padding="20dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/Blue"
+            android:textColorHint="@color/Blue"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText,TextFields" />
+
+        <Button
+            android:id="@+id/run_analysis_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Run Analysis"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
